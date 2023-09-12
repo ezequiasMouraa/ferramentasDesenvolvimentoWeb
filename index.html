@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="processar_cadastro.php" method="POST">
+            
+            <div class="inputs">
+                <div class="container-name">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                    
+                <div class="container-data">
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="text" id="dataNascimento" name="dataNascimento" placeholder="DD/MM/AAAA" required>
+                </div>    
+            </div>
+            
+            <div class="container-check_box">
+                <label id="residencia">Residência:</label>
+
+                <input type="checkbox" id="casa" name="residencia" value="Casa">
+                <label for="casa">Casa</label>
+
+                <input type="checkbox" id="predio" name="residencia" value="Prédio">
+                <label for="predio">Prédio</label>
+            </div>
+
+            <div class="container-buttons">
+                <button type="submit" class="btn save">Salvar</button>
+                <button type="reset" class="btn clear">Limpar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
